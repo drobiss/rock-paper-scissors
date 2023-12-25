@@ -1,0 +1,95 @@
+/* makes sizing simpler */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* remove default spacing */
+/* force styling of type through styling, rather than elements */
+
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+/* dark mode user-agent-styles */
+
+html {
+  color-scheme: dark light;
+}
+
+/* min body height */
+
+body {
+  min-height: 100vh;
+  flex-direction: column;
+  display: flex;
+  margin: 0;
+  justify-content: center;
+  align-items: center;
+}
+
+/* responsive images/videos */
+img,
+picture,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}
+
+
+h1 {
+  font-family:sans-serif ;
+  font-size: 50px;
+}
+
+h2 {
+  font-family: sans-serif;
+  font-size: 25px;
+}
+
+h3 {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+header {
+ text-align: center;
+ 
+}
+
+.score {
+  text-align: center;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 50px;
+}
+
+#rockBtn, #paperBtn, #scissorsBtn {
+  background-color: #121212;
+  border-radius: 25px;
+  padding: 15px;
+  cursor: pointer;
+}
+
+.score-board {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 50px;
+}
+
+.player-score, .computer-score {
+  text-align: center;
+  
+}
